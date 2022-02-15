@@ -28,7 +28,7 @@ namespace WindowsFormsApp1cd
 
         private void label1_Click(object sender, EventArgs e)
         {
-            if(int.TryParse(textBox1.Text, out int év)|| év < 1989)
+            if(!int.TryParse(textBox1.Text, out int év)|| év < 1989)
             
             {
                 MessageBox.Show("Hiba! Az évszám nem megfelelő!");
